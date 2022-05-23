@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AB23712_SignalR.Context.Migrations
 {
     [DbContext(typeof(WeatherForecastContext))]
-    [Migration("20220520181348_2")]
-    partial class _2
+    [Migration("20220519190957_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -24,7 +24,7 @@ namespace AB23712_SignalR.Context.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("AB23712_SignalR.Context.WeatherForecast", b =>
+            modelBuilder.Entity("AB23712.Context.WeatherForecast", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -32,15 +32,8 @@ namespace AB23712_SignalR.Context.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
 
-                    b.Property<string>("ContactId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
 
                     b.Property<string>("Summary")
                         .HasColumnType("nvarchar(max)");

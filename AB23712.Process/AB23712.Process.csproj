@@ -15,8 +15,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AB23712_SignalR.Context\AB23712_SignalR.Context.csproj" />
-      <ProjectReference Include="..\AB23712_SignalR\AB23712_SignalR.csproj" />
+      <ProjectReference Include="..\AB23712.Context\AB23712.Context.csproj" />
+      <ProjectReference Include="..\AB23712\AB23712.csproj" />
     </ItemGroup>
 
 </Project>

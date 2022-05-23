@@ -22,7 +22,7 @@ namespace AB23712_SignalR.Context.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("AB23712_SignalR.Context.WeatherForecast", b =>
+            modelBuilder.Entity("AB23712.Context.WeatherForecast", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()

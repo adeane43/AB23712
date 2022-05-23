@@ -22,7 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AB23712_SignalR.Context\AB23712_SignalR.Context.csproj" />
+      <ProjectReference Include="..\AB23712.Context\AB23712.Context.csproj" />
     </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
