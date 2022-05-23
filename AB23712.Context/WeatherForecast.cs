@@ -1,7 +1,4 @@
-﻿using System.Text.Json.Serialization;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
-
-namespace AB23712_SignalR.Context;
+﻿namespace AB23712.Context;
 
 public class WeatherForecast
 {

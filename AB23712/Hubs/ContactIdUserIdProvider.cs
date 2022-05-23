@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.SignalR;
-
-namespace AB23712_SignalR.Hubs;
+﻿namespace AB23712.Hubs;
 
 // public class ContactIdUserIdProvider : IUserIdProvider
 // {

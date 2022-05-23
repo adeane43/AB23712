@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace AB23712_SignalR.Context;
+namespace AB23712.Context;
 
 public static class ServiceCollectionExtensions
 {

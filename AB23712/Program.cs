@@ -1,6 +1,7 @@
 using System.Text.Json.Serialization;
+using AB23712.Context;
 using AB23712_SignalR.Context;
-using ForecastUpdateHub = AB23712_SignalR.Hubs.ForecastUpdateHub;
+using ForecastUpdateHub = AB23712.Hubs.ForecastUpdateHub;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,27 +1,24 @@
-﻿using AB23712_SignalR.Context;
+﻿using AB23712.Context;
 
-namespace AB23712_SignalR.Process;
+namespace AB23712.Process;
 
 public interface IForecastService
 {
-    public Task UpdateForecast(WeatherForecast forecast);
+    public void UpdateForecast(WeatherForecast forecast);
     public IEnumerable<WeatherForecast> GetForecasts();
 }
 
 public class ForecastService : IForecastService
 {
     private readonly IWeatherForecastContext _context;
-    private readonly IHubClient _hubClient;
 
-    public ForecastService(IWeatherForecastContext context, IHubClient hubClient)
+    public ForecastService(IWeatherForecastContext context)
     {
         _context = context;
-        _hubClient = hubClient;
     }
 
-    public async Task UpdateForecast(WeatherForecast forecast)
+    public void UpdateForecast(WeatherForecast forecast)
     {
-        await _hubClient.SendForecast(forecast);
         _context.UpdateForecast(forecast);
     }
 

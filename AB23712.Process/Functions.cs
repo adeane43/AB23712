@@ -1,7 +1,7 @@
-﻿using AB23712_SignalR.Context;
+﻿using AB23712.Context;
 using Microsoft.Azure.WebJobs;
 
-namespace AB23712_SignalR.Process;
+namespace AB23712.Process;
 
 public class Functions
 {
@@ -13,7 +13,7 @@ public class Functions
         _forecastService = forecastService;
     }
 
-    public async Task CycleTemperatures(
+    public void CycleTemperatures(
         [TimerTrigger(scheduleExpression: "* * * * * *", RunOnStartup = true)]
         TimerInfo timerInfo)
     {
@@ -37,7 +37,7 @@ public class Functions
             // Increment the status
             forecast.Status = (Status)((int)(forecast.Status + 1) % NumStatuses);
 
-            await _forecastService.UpdateForecast(forecast);
+            _forecastService.UpdateForecast(forecast);
         }
     }
 }

@@ -1,5 +1,5 @@
-﻿using AB23712_SignalR.Context;
-using AB23712_SignalR.Process;
+﻿using AB23712.Context;
+using AB23712.Process;
 using Microsoft.Azure.WebJobs.Logging;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -13,7 +13,6 @@ builder.ConfigureServices(((context, services) =>
 {
     services.AddWeatherContext(context.Configuration);
     services.AddScoped<IForecastService, ForecastService>();
-    services.AddSingleton<IHubClient, HubClient>();
     services.AddSignalR();
 }));
 

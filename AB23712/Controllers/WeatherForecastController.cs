@@ -1,7 +1,7 @@
-﻿using AB23712_SignalR.Context;
+﻿using AB23712.Context;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AB23712_SignalR.Controllers;
+namespace AB23712.Controllers;
 
 [ApiController]
 [Route("[controller]")]

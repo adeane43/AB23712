@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace AB23712_SignalR.Context;
+namespace AB23712.Context;
 
 public interface IWeatherForecastContext
 {

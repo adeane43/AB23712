@@ -1,7 +1,7 @@
-﻿using AB23712_SignalR.Context;
+﻿using AB23712.Context;
 using Microsoft.AspNetCore.SignalR;
 
-namespace AB23712_SignalR.Hubs;
+namespace AB23712.Hubs;
 
 public class ForecastUpdateHub : Microsoft.AspNetCore.SignalR.Hub
 {
