@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.5" />
+      <PackageReference Include="Microsoft.Azure.WebJobs" Version="3.0.33" />
+      <PackageReference Include="Microsoft.Azure.WebJobs.Extensions" Version="4.0.1" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="6.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\AB23712_SignalR.Context\AB23712_SignalR.Context.csproj" />
+      <ProjectReference Include="..\AB23712_SignalR\AB23712_SignalR.csproj" />
+    </ItemGroup>
+
+</Project>
